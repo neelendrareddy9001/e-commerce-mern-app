@@ -20,16 +20,16 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 
-//routes
-app.use('api/v1/auth', authRoutes)
-
-
 //rest api
 app.get('/', (req, res) => {
     res.send(
         '<h1>Welcome to e-commerce-mern</h1>'
     )
 })
+
+
+//routes
+app.use('/api/v1/auth', authRoutes)
 
 //PORT
 const PORT = process.env.PORT || 8080;
