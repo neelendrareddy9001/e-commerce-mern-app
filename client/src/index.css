@@ -83,3 +83,26 @@ ul li {
   color: blue;
   border-bottom:  2px solid white;
 }
+
+
+/* pnf */
+.pnf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.pnf-heading {
+  font-weight: normal;
+}
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
