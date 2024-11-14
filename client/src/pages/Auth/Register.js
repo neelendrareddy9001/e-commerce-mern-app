@@ -10,7 +10,12 @@ const Register = () => {
             <label htmlFor="exampleInputName" className="form-label">
               Name
             </label>
-            <input type="text" className="form-control" id="exampleInputName" />
+            <input
+              type="text"
+              className="form-control"
+              id="exampleInputName"
+              placeholder="Enter your name"
+            />
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail" className="form-label">
@@ -20,6 +25,7 @@ const Register = () => {
               type="email"
               className="form-control"
               id="exampleInputEmail"
+              placeholder="Enter your email"
             />
           </div>
           <div className="mb-3">
@@ -30,9 +36,33 @@ const Register = () => {
               type="password"
               className="form-control"
               id="exampleInputPassword"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputPhone" className="form-label">
+              Phone
+            </label>
+            <input
+              type="number"
+              className="form-control"
+              id="exampleInputPhone"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputAddress" className="form-label">
+              Address
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="exampleInputAddress"
+              placeholder="Enter your address"
             />
           </div>
         </form>
+        <button className="btn">Submit</button>
       </div>
     </Layout>
   );
