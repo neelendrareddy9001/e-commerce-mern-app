@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <Layout title="Register - Ecommerce App">
-      <div className="form-container">
+      <div className="form-container login input-container">
         <form onSubmit={handleSubmit}>
           <h4 className="title">LOGIN FORM</h4>
           <div className="mb-3">
@@ -25,7 +25,7 @@ const Login = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="form-control"
+              className="form-control shadow-none"
               id="exampleInputEmail"
               placeholder="Enter your email"
               required
@@ -36,7 +36,7 @@ const Login = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="form-control"
+              className="form-control shadow-none"
               id="exampleInputPassword"
               placeholder="Enter your password"
               required
