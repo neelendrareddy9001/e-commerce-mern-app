@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
+import { ToastContainer } from "react-hot-toast";
 
 const Layout = ({ children, description, title, keywords, author }) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({ children, description, title, keywords, author }) => {
       </Helmet>
       <Header />
       <main className="px-5" style={{ height: "80vh" }}>
+        <ToastContainer />
         {children}
       </main>
       <Footer />
