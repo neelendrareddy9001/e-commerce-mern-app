@@ -22,7 +22,7 @@ export const registerController = async (req, res) => {
       return res.send({ error: "Address is Required" });
     }
     if (!answer) {
-      return res.sned({ message: "Answer is requiredd" });
+      return res.send({ message: "Answer is requiredd" });
     }
 
     //checks user
